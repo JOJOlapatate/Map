@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a60704da14b3fdd201601f3a13c598a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a60704da14b3fdd201601f3a13c598a9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a60704da14b3fdd201601f3a13c598a9 = L.map(
+                "map_a60704da14b3fdd201601f3a13c598a9",
+                {
+                    center: [20.4, -89.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e2ffa08f5796ec40a7b9983627cf1ae = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_90fb6ed0d9b8e50eb96464473cbbae7c = L.marker(
+                [21.1619, -86.8515],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_3ea837d22ae63a81e73b26b2c92d574b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90fb6ed0d9b8e50eb96464473cbbae7c.setIcon(icon_3ea837d22ae63a81e73b26b2c92d574b);
+        
+    
+        var popup_a645f43bf26bb93878ecee6f248362d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2725b47eacba64a51dd45539ebb27723 = $(`<div id="html_2725b47eacba64a51dd45539ebb27723" style="width: 100.0%; height: 100.0%;"><strong>Cancún</strong><br>Point de départ, célèbre pour ses plages et ses resorts.</div>`)[0];
+            popup_a645f43bf26bb93878ecee6f248362d8.setContent(html_2725b47eacba64a51dd45539ebb27723);
+        
+
+        marker_90fb6ed0d9b8e50eb96464473cbbae7c.bindPopup(popup_a645f43bf26bb93878ecee6f248362d8)
+        ;
+
+        
+    
+    
+            var marker_071f9ec98bf56671fba91d47968102dc = L.marker(
+                [20.2117, -87.4655],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_390386fddd59097ac9564b251dd7de8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_071f9ec98bf56671fba91d47968102dc.setIcon(icon_390386fddd59097ac9564b251dd7de8d);
+        
+    
+        var popup_32b789c452501fb00793d92aba533e40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63a2f268f452cdb431e1df44654779a0 = $(`<div id="html_63a2f268f452cdb431e1df44654779a0" style="width: 100.0%; height: 100.0%;"><strong>Tulum</strong><br>Ruines mayas avec vue sur la mer des Caraïbes.</div>`)[0];
+            popup_32b789c452501fb00793d92aba533e40.setContent(html_63a2f268f452cdb431e1df44654779a0);
+        
+
+        marker_071f9ec98bf56671fba91d47968102dc.bindPopup(popup_32b789c452501fb00793d92aba533e40)
+        ;
+
+        
+    
+    
+            var marker_b5ecd338e083c0952009c6b3815c32d3 = L.marker(
+                [20.487, -87.7335],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_9f45e56fa5991b4ca2b7c1581a00e570 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5ecd338e083c0952009c6b3815c32d3.setIcon(icon_9f45e56fa5991b4ca2b7c1581a00e570);
+        
+    
+        var popup_199205c0b1e40114d027cef2e16aa449 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_832971a2168b7a19530d38f764f0f22b = $(`<div id="html_832971a2168b7a19530d38f764f0f22b" style="width: 100.0%; height: 100.0%;"><strong>Coba</strong><br>Site maya avec la pyramide Nohoch Mul à escalader.</div>`)[0];
+            popup_199205c0b1e40114d027cef2e16aa449.setContent(html_832971a2168b7a19530d38f764f0f22b);
+        
+
+        marker_b5ecd338e083c0952009c6b3815c32d3.bindPopup(popup_199205c0b1e40114d027cef2e16aa449)
+        ;
+
+        
+    
+    
+            var marker_9b97b07fcea69658baa6c069e83c820f = L.marker(
+                [20.6892, -88.203],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_a99fe70488e4b93491b9b59f3824ff4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b97b07fcea69658baa6c069e83c820f.setIcon(icon_a99fe70488e4b93491b9b59f3824ff4a);
+        
+    
+        var popup_5c16229990d4e2572b0a271a8b30be93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06feae2dd80578781eb14d5ca687c0fc = $(`<div id="html_06feae2dd80578781eb14d5ca687c0fc" style="width: 100.0%; height: 100.0%;"><strong>Valladolid</strong><br>Ville coloniale avec cenotes et charmante architecture.</div>`)[0];
+            popup_5c16229990d4e2572b0a271a8b30be93.setContent(html_06feae2dd80578781eb14d5ca687c0fc);
+        
+
+        marker_9b97b07fcea69658baa6c069e83c820f.bindPopup(popup_5c16229990d4e2572b0a271a8b30be93)
+        ;
+
+        
+    
+    
+            var marker_09c61c03eeb8b8063459d42153d6a071 = L.marker(
+                [20.6843, -88.5678],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_1be5758bdc3d360c92136ac29c755063 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09c61c03eeb8b8063459d42153d6a071.setIcon(icon_1be5758bdc3d360c92136ac29c755063);
+        
+    
+        var popup_59beb63e6deaf0ca4c2f772045be459e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed4840532cd23649bd5c97d88cfd7b5e = $(`<div id="html_ed4840532cd23649bd5c97d88cfd7b5e" style="width: 100.0%; height: 100.0%;"><strong>Chichén Itzá</strong><br>Fameux site maya avec la pyramide de Kukulcán.</div>`)[0];
+            popup_59beb63e6deaf0ca4c2f772045be459e.setContent(html_ed4840532cd23649bd5c97d88cfd7b5e);
+        
+
+        marker_09c61c03eeb8b8063459d42153d6a071.bindPopup(popup_59beb63e6deaf0ca4c2f772045be459e)
+        ;
+
+        
+    
+    
+            var marker_2ac1477bc5fa649411112f2159c9a69a = L.marker(
+                [21.5934, -88.15],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_d2abc8fc40c9901b1288abca835dd7b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ac1477bc5fa649411112f2159c9a69a.setIcon(icon_d2abc8fc40c9901b1288abca835dd7b2);
+        
+    
+        var popup_97dd78ccdf75b7677c3f9b7508d1470f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eeafd9b295f7a8b847ab45a383a02353 = $(`<div id="html_eeafd9b295f7a8b847ab45a383a02353" style="width: 100.0%; height: 100.0%;"><strong>Rio Lagartos</strong><br>Réserve naturelle avec flamants roses et mangroves.</div>`)[0];
+            popup_97dd78ccdf75b7677c3f9b7508d1470f.setContent(html_eeafd9b295f7a8b847ab45a383a02353);
+        
+
+        marker_2ac1477bc5fa649411112f2159c9a69a.bindPopup(popup_97dd78ccdf75b7677c3f9b7508d1470f)
+        ;
+
+        
+    
+    
+            var marker_962492af9e8623b18bfdb4c27220becb = L.marker(
+                [21.6021, -88.1055],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_dfbaa696b1cb5aeab60faa008084de74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_962492af9e8623b18bfdb4c27220becb.setIcon(icon_dfbaa696b1cb5aeab60faa008084de74);
+        
+    
+        var popup_71600b025cf0172861b162a4c4b84c97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_038dbbc7b270dfaa92696480c2eb0b70 = $(`<div id="html_038dbbc7b270dfaa92696480c2eb0b70" style="width: 100.0%; height: 100.0%;"><strong>Las Coloradas</strong><br>Lacs roses à découvrir près de Rio Lagartos.</div>`)[0];
+            popup_71600b025cf0172861b162a4c4b84c97.setContent(html_038dbbc7b270dfaa92696480c2eb0b70);
+        
+
+        marker_962492af9e8623b18bfdb4c27220becb.bindPopup(popup_71600b025cf0172861b162a4c4b84c97)
+        ;
+
+        
+    
+    
+            var marker_0efd75918f236d0799418c34235559d8 = L.marker(
+                [20.9674, -89.5926],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_657516879e9b207df7b044d17d6212bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0efd75918f236d0799418c34235559d8.setIcon(icon_657516879e9b207df7b044d17d6212bd);
+        
+    
+        var popup_b534d567bb6f3727b20aae60fd4ac8f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd48577ee79baee5dd3bb5860c6957a1 = $(`<div id="html_bd48577ee79baee5dd3bb5860c6957a1" style="width: 100.0%; height: 100.0%;"><strong>Mérida</strong><br>Capitale du Yucatán, riche en culture et histoire.</div>`)[0];
+            popup_b534d567bb6f3727b20aae60fd4ac8f9.setContent(html_bd48577ee79baee5dd3bb5860c6957a1);
+        
+
+        marker_0efd75918f236d0799418c34235559d8.bindPopup(popup_b534d567bb6f3727b20aae60fd4ac8f9)
+        ;
+
+        
+    
+    
+            var marker_93238fd8c6f006306937747524ec6bf9 = L.marker(
+                [20.3606, -89.7686],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_0315bb31ef8f7144bc19bc48cccad4af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93238fd8c6f006306937747524ec6bf9.setIcon(icon_0315bb31ef8f7144bc19bc48cccad4af);
+        
+    
+        var popup_cae2183716aef3d2518e2b99d023edf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfde6afedd079b506fb2d83425770e47 = $(`<div id="html_cfde6afedd079b506fb2d83425770e47" style="width: 100.0%; height: 100.0%;"><strong>Uxmal</strong><br>Site archéologique impressionnant de la période maya.</div>`)[0];
+            popup_cae2183716aef3d2518e2b99d023edf1.setContent(html_cfde6afedd079b506fb2d83425770e47);
+        
+
+        marker_93238fd8c6f006306937747524ec6bf9.bindPopup(popup_cae2183716aef3d2518e2b99d023edf1)
+        ;
+
+        
+    
+    
+            var marker_c426f0f861d062ba49f62f0e58f6cfc9 = L.marker(
+                [20.6296, -87.0739],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_8632bb69b66a774c037f7a416ded3d23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c426f0f861d062ba49f62f0e58f6cfc9.setIcon(icon_8632bb69b66a774c037f7a416ded3d23);
+        
+    
+        var popup_d309b6c12a8ceb97c5290e4b545cd8c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efbc44752b4fd97399bd3beb4041b5a7 = $(`<div id="html_efbc44752b4fd97399bd3beb4041b5a7" style="width: 100.0%; height: 100.0%;"><strong>Playa del Carmen</strong><br>Destination balnéaire animée avec plages et magasins.</div>`)[0];
+            popup_d309b6c12a8ceb97c5290e4b545cd8c2.setContent(html_efbc44752b4fd97399bd3beb4041b5a7);
+        
+
+        marker_c426f0f861d062ba49f62f0e58f6cfc9.bindPopup(popup_d309b6c12a8ceb97c5290e4b545cd8c2)
+        ;
+
+        
+    
+    
+            var marker_8a6bb19aee16625fbf44f4c4de12b1c8 = L.marker(
+                [20.2921, -87.3916],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_6fbb0589f60b6f35f700a24a796c6d8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8a6bb19aee16625fbf44f4c4de12b1c8.setIcon(icon_6fbb0589f60b6f35f700a24a796c6d8b);
+        
+    
+        var popup_29291c7673c64cd7c6edbc222ed23844 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cb0728c732fde1ba22a8f2f57d6c04a = $(`<div id="html_8cb0728c732fde1ba22a8f2f57d6c04a" style="width: 100.0%; height: 100.0%;"><strong>Cenote Dos Ojos</strong><br>Cénote célèbre pour le snorkeling et la plongée.</div>`)[0];
+            popup_29291c7673c64cd7c6edbc222ed23844.setContent(html_8cb0728c732fde1ba22a8f2f57d6c04a);
+        
+
+        marker_8a6bb19aee16625fbf44f4c4de12b1c8.bindPopup(popup_29291c7673c64cd7c6edbc222ed23844)
+        ;
+
+        
+    
+    
+            var marker_0a768b5c99da60ca35eaf096132152dd = L.marker(
+                [21.232, -86.7314],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_863d8cc00fef45e8c8b8eba3e1958518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a768b5c99da60ca35eaf096132152dd.setIcon(icon_863d8cc00fef45e8c8b8eba3e1958518);
+        
+    
+        var popup_3a903912d075c73319965c6537f5c6d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_734bd34e9260f4222520c0b3daff5619 = $(`<div id="html_734bd34e9260f4222520c0b3daff5619" style="width: 100.0%; height: 100.0%;"><strong>Isla Mujeres</strong><br>Île charmante avec de superbes plages et eaux cristallines.</div>`)[0];
+            popup_3a903912d075c73319965c6537f5c6d1.setContent(html_734bd34e9260f4222520c0b3daff5619);
+        
+
+        marker_0a768b5c99da60ca35eaf096132152dd.bindPopup(popup_3a903912d075c73319965c6537f5c6d1)
+        ;
+
+        
+    
+    
+            ant_path_ef28c6526df8a154a1e2a44fc2a3ff3a = L.polyline.antPath(
+              [[21.1619, -86.8515], [20.2117, -87.4655]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_bda083db71380df7c55c271092e8d38b = L.marker(
+                [20.686799999999998, -87.1585],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_23cfe7413a33861af8308c8a13da13d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bda083db71380df7c55c271092e8d38b.setIcon(icon_23cfe7413a33861af8308c8a13da13d4);
+        
+    
+        var popup_83857010cb54952ebec12036bb6347e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6512264ff8e423666e0b479ba615f7f9 = $(`<div id="html_6512264ff8e423666e0b479ba615f7f9" style="width: 100.0%; height: 100.0%;">2h30 (Cancún -> Tulum)</div>`)[0];
+            popup_83857010cb54952ebec12036bb6347e1.setContent(html_6512264ff8e423666e0b479ba615f7f9);
+        
+
+        marker_bda083db71380df7c55c271092e8d38b.bindPopup(popup_83857010cb54952ebec12036bb6347e1)
+        ;
+
+        
+    
+    
+            ant_path_cd84c80329ffa5f4e40ac879e095e925 = L.polyline.antPath(
+              [[20.2117, -87.4655], [20.487, -87.7335]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_aeb4d2035b531dd81e43ed55a74287af = L.marker(
+                [20.34935, -87.5995],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_9c158ae9f8876e18d74a4a6ffd30a629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aeb4d2035b531dd81e43ed55a74287af.setIcon(icon_9c158ae9f8876e18d74a4a6ffd30a629);
+        
+    
+        var popup_bf47f220f38aba31b0b4b1a428ba8881 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d840b3fcd316b38aed200f757e6e1d8d = $(`<div id="html_d840b3fcd316b38aed200f757e6e1d8d" style="width: 100.0%; height: 100.0%;">45m (Tulum -> Coba)</div>`)[0];
+            popup_bf47f220f38aba31b0b4b1a428ba8881.setContent(html_d840b3fcd316b38aed200f757e6e1d8d);
+        
+
+        marker_aeb4d2035b531dd81e43ed55a74287af.bindPopup(popup_bf47f220f38aba31b0b4b1a428ba8881)
+        ;
+
+        
+    
+    
+            ant_path_2ac5612a9ee260dd3febb846d577acca = L.polyline.antPath(
+              [[20.487, -87.7335], [20.6892, -88.203]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_c06f1dd3647aa140dcb14db8198a442b = L.marker(
+                [20.588099999999997, -87.96825000000001],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_ce75b480e06e3284844f6d6666e9db8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c06f1dd3647aa140dcb14db8198a442b.setIcon(icon_ce75b480e06e3284844f6d6666e9db8a);
+        
+    
+        var popup_f61106e01e11f16cfee3fdbf4cdcefb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbd9ad3413f6903e4a5c93ebb2849847 = $(`<div id="html_bbd9ad3413f6903e4a5c93ebb2849847" style="width: 100.0%; height: 100.0%;">1h30 (Coba -> Valladolid)</div>`)[0];
+            popup_f61106e01e11f16cfee3fdbf4cdcefb6.setContent(html_bbd9ad3413f6903e4a5c93ebb2849847);
+        
+
+        marker_c06f1dd3647aa140dcb14db8198a442b.bindPopup(popup_f61106e01e11f16cfee3fdbf4cdcefb6)
+        ;
+
+        
+    
+    
+            ant_path_ebf67304e1fbbd69b76c52f508c62372 = L.polyline.antPath(
+              [[20.6892, -88.203], [20.6843, -88.5678]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_76a92a249ef46e5d33fd2365f11062ba = L.marker(
+                [20.68675, -88.3854],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_aa3e23c51bd92c3810609fe02a4238c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_76a92a249ef46e5d33fd2365f11062ba.setIcon(icon_aa3e23c51bd92c3810609fe02a4238c7);
+        
+    
+        var popup_a80ed04558023c4b826c2108a61f8988 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19bb5213ccf103dd6f7bdddf0a192c63 = $(`<div id="html_19bb5213ccf103dd6f7bdddf0a192c63" style="width: 100.0%; height: 100.0%;">45m (Valladolid -> Chichén Itzá)</div>`)[0];
+            popup_a80ed04558023c4b826c2108a61f8988.setContent(html_19bb5213ccf103dd6f7bdddf0a192c63);
+        
+
+        marker_76a92a249ef46e5d33fd2365f11062ba.bindPopup(popup_a80ed04558023c4b826c2108a61f8988)
+        ;
+
+        
+    
+    
+            ant_path_15b4638ac9f632de049ce6fc6ae89bd1 = L.polyline.antPath(
+              [[20.6843, -88.5678], [21.5934, -88.15]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_a2015891723a39837e67b0e2b88bc120 = L.marker(
+                [21.138849999999998, -88.3589],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_aa163387062beca6053b28828188de68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a2015891723a39837e67b0e2b88bc120.setIcon(icon_aa163387062beca6053b28828188de68);
+        
+    
+        var popup_266d1b7cbe8c894851cf68df24fe11f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ef8c799eea20f18a38f483b8bbe1519 = $(`<div id="html_7ef8c799eea20f18a38f483b8bbe1519" style="width: 100.0%; height: 100.0%;">1h45 (Chichén Itzá -> Rio Lagartos)</div>`)[0];
+            popup_266d1b7cbe8c894851cf68df24fe11f7.setContent(html_7ef8c799eea20f18a38f483b8bbe1519);
+        
+
+        marker_a2015891723a39837e67b0e2b88bc120.bindPopup(popup_266d1b7cbe8c894851cf68df24fe11f7)
+        ;
+
+        
+    
+    
+            ant_path_d6ef054730b448720ec676f83142c5b3 = L.polyline.antPath(
+              [[21.5934, -88.15], [20.9674, -89.5926]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_141de1ba147b255ecfad5e004435575a = L.marker(
+                [21.2804, -88.8713],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_ff1b3b527f13d52e9a8a991f743dfce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_141de1ba147b255ecfad5e004435575a.setIcon(icon_ff1b3b527f13d52e9a8a991f743dfce4);
+        
+    
+        var popup_c015634efb44cc85eed40bf2d5e6b1a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b883303c7020f7f0a2e1b31586ca8e29 = $(`<div id="html_b883303c7020f7f0a2e1b31586ca8e29" style="width: 100.0%; height: 100.0%;">2h (Rio Lagartos -> Mérida)</div>`)[0];
+            popup_c015634efb44cc85eed40bf2d5e6b1a9.setContent(html_b883303c7020f7f0a2e1b31586ca8e29);
+        
+
+        marker_141de1ba147b255ecfad5e004435575a.bindPopup(popup_c015634efb44cc85eed40bf2d5e6b1a9)
+        ;
+
+        
+    
+    
+            ant_path_25a1be1f92208a9f3d744a751fc9f351 = L.polyline.antPath(
+              [[20.9674, -89.5926], [20.3606, -89.7686]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_b6f4c7f356c7712e3583d952c9a7005d = L.marker(
+                [20.664, -89.6806],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_52147d9e4fe034b0fcab0022f489ed54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b6f4c7f356c7712e3583d952c9a7005d.setIcon(icon_52147d9e4fe034b0fcab0022f489ed54);
+        
+    
+        var popup_e605d93df37c96110bb668ab72329c49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60a0c25d2eda2a267ab6845cda5a5223 = $(`<div id="html_60a0c25d2eda2a267ab6845cda5a5223" style="width: 100.0%; height: 100.0%;">1h (Mérida -> Uxmal)</div>`)[0];
+            popup_e605d93df37c96110bb668ab72329c49.setContent(html_60a0c25d2eda2a267ab6845cda5a5223);
+        
+
+        marker_b6f4c7f356c7712e3583d952c9a7005d.bindPopup(popup_e605d93df37c96110bb668ab72329c49)
+        ;
+
+        
+    
+    
+            ant_path_1c3aad306ec7ab8e82c129c3e9ba862f = L.polyline.antPath(
+              [[20.3606, -89.7686], [20.6296, -87.0739]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_c89362949a6f3c84f99c0dff69a30b49 = L.marker(
+                [20.4951, -88.42125],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_a3feb107edf136648813ad9c8d3ff0ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c89362949a6f3c84f99c0dff69a30b49.setIcon(icon_a3feb107edf136648813ad9c8d3ff0ec);
+        
+    
+        var popup_e98a013f12363c5a1f896af25948f14b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10378e55b8b966fdbb6853579aab50b8 = $(`<div id="html_10378e55b8b966fdbb6853579aab50b8" style="width: 100.0%; height: 100.0%;">3h (Uxmal -> Playa del Carmen)</div>`)[0];
+            popup_e98a013f12363c5a1f896af25948f14b.setContent(html_10378e55b8b966fdbb6853579aab50b8);
+        
+
+        marker_c89362949a6f3c84f99c0dff69a30b49.bindPopup(popup_e98a013f12363c5a1f896af25948f14b)
+        ;
+
+        
+    
+    
+            ant_path_2b696d76d9d44f3894643dce9cd269fc = L.polyline.antPath(
+              [[20.6296, -87.0739], [20.2921, -87.3916]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_441733c7e0a755ca0dc67b3b888fc904 = L.marker(
+                [20.46085, -87.23275],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_70302d17fcdc7ad1b2701afec975cce1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_441733c7e0a755ca0dc67b3b888fc904.setIcon(icon_70302d17fcdc7ad1b2701afec975cce1);
+        
+    
+        var popup_3cf7f5428645975b180a21dad9154471 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37e1626daf464b30b30dc4325ae9eea2 = $(`<div id="html_37e1626daf464b30b30dc4325ae9eea2" style="width: 100.0%; height: 100.0%;">30m (Playa del Carmen -> Cenote Dos Ojos)</div>`)[0];
+            popup_3cf7f5428645975b180a21dad9154471.setContent(html_37e1626daf464b30b30dc4325ae9eea2);
+        
+
+        marker_441733c7e0a755ca0dc67b3b888fc904.bindPopup(popup_3cf7f5428645975b180a21dad9154471)
+        ;
+
+        
+    
+    
+            ant_path_a1bc666c024727caa27dc6ae5896df6c = L.polyline.antPath(
+              [[20.2921, -87.3916], [21.232, -86.7314]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var marker_8324be0112b786350113330d595d19dc = L.marker(
+                [20.762050000000002, -87.0615],
+                {}
+            ).addTo(map_a60704da14b3fdd201601f3a13c598a9);
+        
+    
+            var icon_0ace9506b89416501dfd42afd0db9db2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8324be0112b786350113330d595d19dc.setIcon(icon_0ace9506b89416501dfd42afd0db9db2);
+        
+    
+        var popup_9373b2ababbdd15fec86c5343f77f54f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ecc98f34118310fb97d6f65676cd7ee = $(`<div id="html_9ecc98f34118310fb97d6f65676cd7ee" style="width: 100.0%; height: 100.0%;">30m ferry (Cenote Dos Ojos -> Isla Mujeres)</div>`)[0];
+            popup_9373b2ababbdd15fec86c5343f77f54f.setContent(html_9ecc98f34118310fb97d6f65676cd7ee);
+        
+
+        marker_8324be0112b786350113330d595d19dc.bindPopup(popup_9373b2ababbdd15fec86c5343f77f54f)
+        ;
+
+        
+    
+</script>
+</html>
